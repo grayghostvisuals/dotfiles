@@ -53,13 +53,11 @@ fi
 alias c='pygmentize -O style=monokai -f console256 -g'
 
 # GIT STUFF
-
+alias gc='git commit -m'
 # Undo a `git push`
 alias undopush="git push -f origin HEAD^:master"
 # Git Status
 alias gs='git status'
-
-
 # git root
 alias gr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
 
