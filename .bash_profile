@@ -7,7 +7,7 @@ unset file
 
 #this line causes terminal to report no such file or directory
 # init z   https://github.com/rupa/z
-#. ~/code/z/z.sh
+. ~/code/z/z.sh
 
 # init rvm
 source ~/.rvm/scripts/rvm
