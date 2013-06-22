@@ -47,7 +47,7 @@ function parse_git_branch() {
 
 # Only show username/host if not default
 function usernamehost() {
-	if [ $USER != $default_username ]; then echo "${MAGENTA}🎸 $USER ${WHITE}➸ ${ORANGE}$HOSTNAME $WHITEin "; fi
+	if [ $USER != $default_username ]; then echo "${MAGENTA}$USER ${WHITE}✭ ${ORANGE}$HOSTNAME $WHITEin "; fi
 }
 
 # iTerm Tab and Title Customization and prompt customization
