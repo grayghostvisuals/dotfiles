@@ -12,6 +12,10 @@ unset file
 # init rvm
 source ~/.rvm/scripts/rvm
 
+# init nvm
+# https://github.com/creationix/nvm
+source ~/.nvm/nvm.sh
+
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob
 
