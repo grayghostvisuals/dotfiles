@@ -15,3 +15,6 @@ export HISTTIMEFORMAT
 
 # Make some commands not show up in history
 export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
+
+#Local Path
+export PATH=/usr/local/bin:$PATH
