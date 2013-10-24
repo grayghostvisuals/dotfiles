@@ -30,6 +30,9 @@ export LANG="en_US"
 # You could just use `-g` instead, but I like being explicit
 complete -W "NSGlobalDomain" defaults
 
+#Git Brew Installation
+export PATH=/usr/local/bin:$PATH
+
 # http://hocuspokus.net/2008/01/a-better-ls-for-mac-os-x/
 # # MacPorts
 # export PATH=/opt/local/bin:/opt/local/sbin:$PATH
