@@ -8,6 +8,7 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until `.osx` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
+
 ###############################################################################
 # General UI/UX                                                               #
 ###############################################################################
@@ -74,6 +75,7 @@ systemsetup -setrestartfreeze on
 # Check for software updates daily, not just once per week
 defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 
+
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
 ###############################################################################
@@ -139,7 +141,6 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 # Screen                                                                      #
 ###############################################################################
 
-
 # Save screenshots to the desktop
 defaults write com.apple.screencapture location -string "$HOME/Desktop"
 
@@ -155,10 +156,10 @@ defaults write NSGlobalDomain AppleFontSmoothing -int 2
 # Enable HiDPI display modes (requires restart)
 sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
 
+
 ###############################################################################
 # Finder                                                                      #
 ###############################################################################
-
 
 # Finder: disable window animations and Get Info animations
 defaults write com.apple.finder DisableAllAnimations -bool true
@@ -234,6 +235,7 @@ unset file
 # Skip DMG verification
 defaults write com.apple.frameworks.diskimages skip-verify true
 
+
 ###############################################################################
 # Dock & hot corners                                                          #
 ###############################################################################
@@ -289,6 +291,7 @@ defaults write com.apple.dock wvous-tr-modifier -int 0
 # Bottom left screen corner → Start screen saver
 defaults write com.apple.dock wvous-bl-corner -int 5
 defaults write com.apple.dock wvous-bl-modifier -int 0
+
 
 ###############################################################################
 # Safari & WebKit                                                             #
@@ -354,6 +357,7 @@ defaults write com.apple.iTunes disableRadio -bool true
 # for `kHiddenMenuItemTargetSearch`.
 defaults write com.apple.iTunes NSUserKeyEquivalents -dict-add "Target Search Field" "@F"
 
+
 ###############################################################################
 # Mail                                                                        #
 ###############################################################################
@@ -368,6 +372,7 @@ defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 # Add the keyboard shortcut ⌘ + Enter to send an email in Mail.app
 defaults write com.apple.mail NSUserKeyEquivalents -dict-add "Send" "@\\U21a9"
 
+
 ###############################################################################
 # Terminal                                                                    #
 ###############################################################################
@@ -381,6 +386,7 @@ defaults write com.apple.terminal StringEncodings -array 4
 #defaults write com.apple.terminal FocusFollowsMouse -bool true
 #defaults write org.x.X11 wm_ffm -bool true
 
+
 ###############################################################################
 # Time Machine                                                                #
 ###############################################################################
@@ -390,6 +396,7 @@ defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
 # Disable local Time Machine backups
 hash tmutil &> /dev/null && sudo tmutil disablelocal
+
 
 ###############################################################################
 # Address Book, Dashboard, iCal, TextEdit, and Disk Utility                   #
@@ -414,6 +421,7 @@ defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
 defaults write com.apple.DiskUtility DUDebugMenuEnabled -bool true
 defaults write com.apple.DiskUtility advanced-image-options -bool true
 
+
 ###############################################################################
 # Google Chrome & Google Chrome Canary                                        #
 ###############################################################################
@@ -421,6 +429,7 @@ defaults write com.apple.DiskUtility advanced-image-options -bool true
 # Allow installing user scripts via GitHub or gists
 defaults write com.google.Chrome ExtensionInstallSources -array "https://*.github.com/*"
 defaults write com.google.Chrome.canary ExtensionInstallSources -array "https://*.github.com/*"
+
 
 ###############################################################################
 # SizeUp.app                                                                  #
@@ -432,10 +441,10 @@ defaults write com.irradiatedsoftware.SizeUp StartAtLogin -bool true
 # Don’t show the preferences window on next start
 defaults write com.irradiatedsoftware.SizeUp ShowPrefsOnNextStart -bool false
 
+
 ###############################################################################
 # Transmission.app                                                            #
 ###############################################################################
-
 
 # Don’t prompt for confirmation before downloading
 defaults write org.m0k.transmission DownloadAsk -bool false
@@ -447,6 +456,7 @@ defaults write org.m0k.transmission DeleteOriginalTorrent -bool true
 defaults write org.m0k.transmission WarningDonate -bool false
 # Hide the legal disclaimer
 defaults write org.m0k.transmission WarningLegal -bool false
+
 
 ###############################################################################
 # Twitter.app                                                                 #
@@ -472,6 +482,7 @@ defaults write com.twitter.twitter-mac ShowFullNames -bool true
 
 # Hide the app in the background if it’s not the front-most window
 defaults write com.twitter.twitter-mac HideInBackground -bool true
+
 
 ###############################################################################
 # Kill affected applications                                                  #
