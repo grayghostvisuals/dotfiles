@@ -9,13 +9,6 @@ unset file
 # init z   https://github.com/rupa/z
 . ~/code/z/z.sh
 
-# init rvm
-source ~/.rvm/scripts/rvm
-
-# init nvm
-# https://github.com/creationix/nvm
-source ~/.nvm/nvm.sh
-
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob
 
