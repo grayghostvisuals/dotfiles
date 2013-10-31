@@ -1,7 +1,7 @@
 # Load ~/.extra, ~/.bash_prompt, ~/.exports, ~/.aliases and ~/.functions
 # ~/.extra can be used for settings you don’t want to commit
 for file in ~/.{extra,bash_prompt,exports,aliases,functions}; do
-	[ -r "$file" ] && source "$file"
+    [ -r "$file" ] && source "$file"
 done
 unset file
 
@@ -45,3 +45,11 @@ export PATH=/usr/local/bin:$PATH
 #     eval `dircolors ~/.dir_colors`
 # fi
 # http://hocuspokus.net/2008/01/a-better-ls-for-mac-os-x/
+
+##
+# Your previous /Users/grayghostvisuals/.bash_profile file was backed up as /Users/grayghostvisuals/.bash_profile.macports-saved_2013-10-30_at_19:21:10
+##
+
+# MacPorts Installer addition on 2013-10-30_at_19:21:10: adding an appropriate PATH variable for use with MacPorts.
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+# Finished adapting your PATH environment variable for use with MacPorts.
