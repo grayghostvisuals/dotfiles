@@ -53,3 +53,5 @@ export PATH=/usr/local/bin:$PATH
 # MacPorts Installer addition on 2013-10-30_at_19:21:10: adding an appropriate PATH variable for use with MacPorts.
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
