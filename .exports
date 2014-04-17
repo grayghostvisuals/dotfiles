@@ -15,9 +15,3 @@ export HISTTIMEFORMAT
 
 # Make some commands not show up in history
 export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
-
-#Local Path
-export PATH="/usr/local/bin:$PATH" >> ~/.bash_profile
-
-#Homebrew Path
-export PATH="/usr/local/sbin:$PATH" >> ~/.bash_profile
