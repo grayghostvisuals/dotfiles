@@ -56,11 +56,14 @@ fi
 # 							   sudo easy_install Pygments
 alias c='pygmentize -O style=monokai -f console256 -g'
 
+
 # RVM
 alias rvmls='rvm list'
 alias rvmit='rvm use'
-alias gemsetmake='rvm gemset create'
+alias gemsetls='rvm gemset list'
+alias gemsetmk='rvm gemset create'
 alias gemsetuse='rvm gemset use'
+
 
 # GIT STUFF
 alias gc='git commit -m'
