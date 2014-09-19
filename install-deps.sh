@@ -31,6 +31,12 @@ chmod +x ~/code/z/z.sh
 # z binary is already referenced from .bash_profile
 
 
+# https://github.com/thebitguru/play-button-itunes-patch
+# disable itunes opening on media keys
+cd ~/code
+git clone https://github.com/thebitguru/play-button-itunes-patch
+
+
 # my magic photobooth symlink -> dropbox. I love it.
 # first move Photo Booth folder out of Pictures
 # then start Photo Booth. It'll ask where to put the library.
