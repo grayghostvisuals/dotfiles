@@ -1,3 +1,6 @@
+[user]
+  name = Dennis Gaebel
+  email = grayghost@grayghostvisuals.com
 [alias]
 	c = commit -am
 	up = pull
