@@ -74,8 +74,10 @@ alias gemsetrm='rvm gemset delete'
 alias gc='git commit -m'
 alias gadd='git add --all'
 alias gpush='git push'
-alias undopush="git push -f origin HEAD^:master"
+alias undopush='git push -f origin HEAD^:master'
 alias gs='git status'
+alias glog='git log --pretty=oneline'
+alias glogstat='git log --pretty=oneline --stat'
 alias gr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
 
 
