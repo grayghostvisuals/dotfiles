@@ -81,6 +81,20 @@ alias glogstat='git log --pretty=oneline --stat'
 alias gr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
 
 
+# Heroku
+alias herokupush='git push heroku master'
+alias herokubash='heroku run bash'
+alias herokutail='heroku logs --tail'
+alias foremanweb='foreman start web'
+# Heroku Repo : https://github.com/heroku/heroku-repo
+alias herokuclone='heroku repo:clone -a'
+alias herokudl='heroku repo:download -a'
+alias herokugc='heroku repo:gc -a appname'
+alias herokupurge='heroku repo:purge_cache -a'
+alias herokurebuild='heroku repo:rebuild -a'
+alias herokureset='heroku repo:reset -a'
+
+
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en1"
