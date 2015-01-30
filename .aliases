@@ -52,13 +52,22 @@ fi
 # 							   sudo easy_install Pygments
 alias c='pygmentize -O style=monokai -f console256 -g'
 
-# GIT STUFF
+# RVM
+alias rvmls='rvm list'
+alias rvmit='rvm use'
+alias gemsetls='rvm gemset list'
+alias gemsetmk='rvm gemset create'
+alias gemsetuse='rvm gemset use'
+alias gemsetrm='rvm gemset delete'
+
+# Git
 alias gc='git commit -m'
-# Undo a `git push`
-alias undopush="git push -f origin HEAD^:master"
-# Git Status
+alias gadd='git add --all'
+alias gpush='git push'
+alias undopush='git push -f origin HEAD^:master'
 alias gs='git status'
-# git root
+alias glog='git log --pretty=oneline'
+alias glogstat='git log --pretty=oneline --stat'
 alias gr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
 
 # IP addresses
