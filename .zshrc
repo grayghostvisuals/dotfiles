@@ -81,6 +81,8 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Above samples won't work w/my 
-# personal setup.
-source $HOME/.aliases
+# Source Files
+for file in ~/.{extra,exports,aliases,functions}; do
+    [ -r "$file" ] && source "$file"
+done
+unset file
