@@ -80,4 +80,7 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Above samples won't work w/my 
+# personal setup.
 source $HOME/.aliases
