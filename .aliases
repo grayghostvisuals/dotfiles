@@ -81,6 +81,10 @@ alias glogstat='git log --pretty=oneline --stat'
 alias gr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
 
 
+# Jekyll
+alias js='jekyll serve --watch'
+
+
 # Heroku
 alias herokupush='git push heroku master'
 alias herokubash='heroku run bash'
