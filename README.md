@@ -1,4 +1,4 @@
-# Paul's dotfiles
+# GGV dotfiles
 
 [mathias's readme](https://github.com/mathiasbynens/dotfiles/) is awesome. go read it.
 
@@ -46,16 +46,13 @@ When setting up a new Mac, you may want to set some sensible OS X defaults:
 I recommend getting a [`.jshintrc`](https://github.com/jshint/node-jshint/blob/master/.jshintrc) and [`.editorconfig`](http://editorconfig.org/) defined for all your projects.
 
 
+## Overview of files
 
-
-
-## overview of files
-
-####  Automatic config
+####  Auto Config
 * `.ackrc` - for ack (better than grep)
 * `.vimrc`, `.vim` - vim config, obv.
 
-#### shell environment
+#### shell
 * `.aliases`
 * `.bash_profile`
 * `.bash_prompt`
@@ -64,12 +61,12 @@ I recommend getting a [`.jshintrc`](https://github.com/jshint/node-jshint/blob/m
 * `.functions`
 * `.extra` - not included, explained above
 
-#### manual run
+#### manual
 * `install-deps.sh` - random apps i need installed
 * `.osx` - run on a fresh osx machine
 * `.brew` - homebrew initialization
 
-#### git, brah
+#### git
 * `.git`
 * `.gitattributes`
 * `.gitconfig`
@@ -81,7 +78,7 @@ I recommend getting a [`.jshintrc`](https://github.com/jshint/node-jshint/blob/m
 ## Installation
 
 ```bash
-git clone https://github.com/paulirish/dotfiles.git && cd dotfiles && ./sync.sh
+git clone https://github.com/grayghostvisuals/dotfiles.git && cd dotfiles && ./sync.sh
 ```
 
 To update later on, just run the sync again.

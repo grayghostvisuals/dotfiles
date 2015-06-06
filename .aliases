@@ -23,7 +23,7 @@ alias hosts='sudo $EDITOR /etc/hosts'   # yes I occasionally 127.0.0.1 twitter.c
 alias bunyip='node ~/code/bunyip/cli.js'
 
 
-# Star Wars Bitch!
+# Star Wars!
 alias starwars='telnet towel.blinkenlights.nl'
 
 
@@ -86,6 +86,7 @@ alias herokupush='git push heroku master'
 alias herokubash='heroku run bash'
 alias herokutail='heroku logs --tail'
 alias foremanweb='foreman start web'
+
 # Heroku Repo : https://github.com/heroku/heroku-repo
 alias herokuclone='heroku repo:clone -a'
 alias herokudl='heroku repo:download -a'
